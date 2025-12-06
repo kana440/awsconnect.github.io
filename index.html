@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Amazon Connect Chat Widget Example</title>
+</head>
+<body>
+  <h1>Amazon Connect Chat Widget Integration</h1>
+  <!-- The chat widget will be loaded and displayed by the script below -->
+</body>
+<script type="text/javascript">
+  (function(w, d, x, id){
+    s=d.createElement('script');
+    s.src='https://call-demo-reswith.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
+    s.async=1;
+    s.id=id;
+    d.getElementsByTagName('head')[0].appendChild(s);
+    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+  })(window, document, 'amazon_connect', '2780c64f-4e11-4892-bf35-90ed257d76be');
+  amazon_connect('styles', { iconType: 'CHAT_VOICE', openChat: { color: '#ffffff', backgroundColor: '#123456' }, closeChat: { color: '#ffffff', backgroundColor: '#123456'} });
+  amazon_connect('snippetId', 'QVFJREFIaEFpZC9qKzF2OGFUT3pGdzRueCtKR2w1QmV1RmxLV3d2TVIzUEs2d1ZwVlFFandXWEw3VDk0VjVjR0xmVE1yK1JMQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNTm5jVm5JcjU0aTBHajhwMEFnRVFnQ3Z5N0ludTdCSU9xdmFSWTZYeG9KdzVzL2I1UTNaa2xJZkVYWm9hNnVSSEc5ZVhnV0RObWRrZHMzOTg6OmRYSXQzOWdVZDR4Y3pXSjNUYnlyU0lCakdvWW8vRmtzOXJBRnFUQmFDQ2NQVGpqZ0QyMm11eURsRFZ2akViQ1B2TG9LdCtsNHpXM0l0Q1VyQTIweXkwb3NnV0R4Q0VMRjgzWjJJd1pudlhjMWJJR3lhbk1GdVJVUktnRDVxaDRxbDNFNFJNblVLVU91QWpEUndHQk9ubHJqRXltN1RORT0=');
+  amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
+</script>
+</html>
