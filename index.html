@@ -7,18 +7,16 @@
   <!-- The chat widget will be loaded and displayed by the script below -->
 </body>
 <script type="text/javascript">
-    (function(w, d, x, id){
-        s=d.createElement('script');
-        s.src='https://call-demo-reswiz.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
-        s.async=1;
-        s.id=id;
-        d.getElementsByTagName('head')[0].appendChild(s);
-        w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
-    })(window, document, 'amazon_connect', '39b66666-6778-4ec0-9820-6fc2d0beb4a1');
-    amazon_connect('styles', { iconType: 'WEB_FORM', openChat: { color: '#ffffff', backgroundColor: '#123456' }, closeChat: { color: '#ffffff', backgroundColor: '#123456'}, headerConfig: { headerMessage: 'How can we help?', headerColorHex: '#123456'}, logoConfig: { sourceUrl: ''} });
-    amazon_connect('snippetId', 'QVFJREFIaEFpZC9qKzF2OGFUT3pGdzRueCtKR2w1QmV1RmxLV3d2TVIzUEs2d1ZwVlFFS1pBNSsrQW52VWE3dVZSUjhMZGFMQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNUlVuQTd5Ry9jdllkQk5HSUFnRVFnQ3NTUWxacmRmYlRrZ2luWjJ1cXo3Y00vK0gwdC9GY0RuOCtvaXUvR09SY0dKRjJnVGR3NE5FODN5ajg6OlllWG4vRnhlY3N4cVRydWJiSURpYm9ia3ErR2pLVTR2Z1RGd3NTb1VXenRrWHRyVW9KMnh2RDI1VkJRV0VmTTZCakQ5NDJqUFpscUNvWE9JNHRnd1JibTBYaFM3K05VTEZaZmpLZWR3TlZFRHlaQ2dxTENaNXZnZEppdU9YcUtpc2N1bkQ4ZE1GNmxOQXhydW1yK1JGYmZWMU8zV2ZUZz0=');
-    amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
-    amazon_connect('displayType', 'FLOATING_BUTTON');
-    amazon_connect('viewConfig', '{\"arn\":\"arn:aws:connect:ap-northeast-1:823766425892:instance/23c87b74-5664-40e5-a904-fe4f544bb95c/view/9cc91478-e3f8-4ae5-b06c-62a1fff16b89:$LATEST\",\"id\":\"9cc91478-e3f8-4ae5-b06c-62a1fff16b89\",\"content\":{\"actions\":[\"ActionSelected\"],\"inputSchema\":{\"type\":\"object\",\"properties\":{},\"required\":[],\"$defs\":{\"ViewCondition\":{\"$id\":\"/view/condition\",\"type\":\"object\",\"patternProperties\":{\"^(MoreThan|LessThan|NotEquals|Equals|Includes)$\":{\"type\":\"object\",\"properties\":{\"ElementByKey\":{\"type\":\"string\"},\"ElementByValue\":{\"anyOf\":[{\"type\":\"number\"},{\"type\":\"string\"},{\"type\":\"boolean\"},{\"type\":\"array\"},{\"type\":\"object\"}]}},\"additionalProperties\":false},\"^(AndConditions|OrConditions)$\":{\"type\":\"array\",\"items\":{\"$ref\":\"/view/condition\"}}},\"additionalProperties\":false}}},\"template\":{\"Head\":{\"Configuration\":{\"Layout\":{\"Columns\":[12]}},\"Integrations\":[],\"Title\":\"Contact Practice\"},\"Body\":[{\"_id\":\"ConnectAction_1767513055316\",\"Type\":\"ConnectAction\",\"Props\":{\"ConnectActionType\":\"StartChatContact\",\"Label\":\"Create Action Button Label\",\"StartTaskContactProps\":{\"ContactFlowId\":\"\",\"TaskFields\":{\"Name\":\"\",\"References\":{}},\"Attributes\":[{\"Key\":\"\",\"Value\":\"\"}]},\"StartEmailContactProps\":{\"DestinationEmailAddress\":\"\",\"ContactFlowId\":\"\",\"EmailFields\":{\"CustomerDisplayName\":\"\",\"CustomerEmailAddress\":\"\",\"Subject\":\"\",\"Body\":\"\"},\"Attributes\":[{\"Key\":\"\",\"Value\":\"\"}]},\"StartChatContactProps\":{\"ContactFlowId\":\"\",\"ChatFields\":{\"CustomerDisplayName\":\"\",\"InitialMessage\":\"\"},\"Attributes\":[{\"Key\":\"\",\"Value\":\"\"}]}},\"Content\":[\"Connect Action Button\"]}]}},\"name\":\"Contact Practice\",\"status\":\"PUBLISHED\",\"type\":\"CUSTOMER_MANAGED\",\"viewContentSha256\":\"882181a3b4fb7f3769127433fb464e80292cf9a063531893c267bfb20ceef87b\"}');
+  (function(w, d, x, id){
+    s=d.createElement('script');
+    s.src='https://call-demo-reswiz.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
+    s.async=1;
+    s.id=id;
+    d.getElementsByTagName('head')[0].appendChild(s);
+    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+  })(window, document, 'amazon_connect', '39b66666-6778-4ec0-9820-6fc2d0beb4a1');
+  amazon_connect('styles', { iconType: 'CHAT', openChat: { color: '#000000', backgroundColor: '#123456' }, closeChat: { color: '#000000', backgroundColor: '#123456'} });
+  amazon_connect('snippetId', 'QVFJREFIaEFpZC9qKzF2OGFUT3pGdzRueCtKR2w1QmV1RmxLV3d2TVIzUEs2d1ZwVlFFS1pBNSsrQW52VWE3dVZSUjhMZGFMQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNUlVuQTd5Ry9jdllkQk5HSUFnRVFnQ3NTUWxacmRmYlRrZ2luWjJ1cXo3Y00vK0gwdC9GY0RuOCtvaXUvR09SY0dKRjJnVGR3NE5FODN5ajg6OlllWG4vRnhlY3N4cVRydWJiSURpYm9ia3ErR2pLVTR2Z1RGd3NTb1VXenRrWHRyVW9KMnh2RDI1VkJRV0VmTTZCakQ5NDJqUFpscUNvWE9JNHRnd1JibTBYaFM3K05VTEZaZmpLZWR3TlZFRHlaQ2dxTENaNXZnZEppdU9YcUtpc2N1bkQ4ZE1GNmxOQXhydW1yK1JGYmZWMU8zV2ZUZz0=');
+  amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
 </script>
 </html>
